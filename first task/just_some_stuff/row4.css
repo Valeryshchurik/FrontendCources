@@ -1,0 +1,526 @@
+.row_4 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 219;
+}
+.user_says {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 218;
+}
+.comments {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 217;
+}
+.Shape {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.502;
+    position: absolute;
+    left: 1408px;
+    top: 2140px;
+    width: 30px;
+    height: 24px;
+    z-index: 216;
+}
+.Shape {
+    background-image: -moz-linear-gradient( 45deg, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0) 100%);
+    background-image: -webkit-linear-gradient( 45deg, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0) 100%);
+    background-image: -ms-linear-gradient( 45deg, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0) 100%);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.25),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 1393px;
+    top: 2129px;
+    width: 60px;
+    height: 62px;
+    z-index: 215;
+}
+.shadow {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 1451px;
+    top: 2131px;
+    width: 18px;
+    height: 36px;
+    z-index: 214;
+}
+.Shape {
+    background-image: -moz-linear-gradient( 45deg, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0) 100%);
+    background-image: -webkit-linear-gradient( 45deg, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0) 100%);
+    background-image: -ms-linear-gradient( 45deg, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0) 100%);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.25),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 1408px;
+    top: 2122px;
+    width: 61px;
+    height: 45px;
+    z-index: 213;
+}
+.bg {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 1379px;
+    top: 2098px;
+    width: 106px;
+    height: 106px;
+    z-index: 211;
+}
+.__Kate_Doe {
+    font-size: 16px;
+    font-family: "SourceSansPro";
+    color: rgb(247, 116, 98);
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: left;
+    position: absolute;
+    left: 1004px;
+    top: 2179.6px;
+    z-index: 210;
+}
+.Sed_egestas__ante_et_vulputate_volutpat__eros_p {
+    font-size: 15px;
+    font-family: "SourceSansPro";
+    color: rgb(140, 145, 147);
+    line-height: 1.6;
+    text-align: left;
+    position: absolute;
+    left: 1004.94px;
+    top: 2129.534px;
+    width: 333px;
+    height: 62px;
+    z-index: 209;
+}
+.bg {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(236, 236, 236);
+    border-radius: 3px;
+    background-color: rgb(236, 236, 236);
+    position: absolute;
+    left: 971px;
+    top: 2060px;
+    width: 544px;
+    height: 177px;
+    z-index: 208;
+}
+.user_says {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 206;
+}
+.comments {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 205;
+}
+.Shape {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.502;
+    position: absolute;
+    left: 1408px;
+    top: 1927px;
+    width: 30px;
+    height: 24px;
+    z-index: 204;
+}
+.Shape {
+    background-image: -moz-linear-gradient( 45deg, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0) 100%);
+    background-image: -webkit-linear-gradient( 45deg, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0) 100%);
+    background-image: -ms-linear-gradient( 45deg, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0) 100%);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.25),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 1393px;
+    top: 1916px;
+    width: 60px;
+    height: 62px;
+    z-index: 203;
+}
+.shadow {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 1451px;
+    top: 1918px;
+    width: 18px;
+    height: 36px;
+    z-index: 202;
+}
+.Shape {
+    background-image: -moz-linear-gradient( 45deg, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0) 100%);
+    background-image: -webkit-linear-gradient( 45deg, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0) 100%);
+    background-image: -ms-linear-gradient( 45deg, rgba(0,0,0,0.10196) 0%, rgba(0,0,0,0) 100%);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.25),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 1408px;
+    top: 1909px;
+    width: 61px;
+    height: 45px;
+    z-index: 201;
+}
+.bg {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 1379px;
+    top: 1885px;
+    width: 106px;
+    height: 106px;
+    z-index: 199;
+}
+.__John_Doe {
+    font-size: 16px;
+    font-family: "SourceSansPro";
+    color: rgb(247, 116, 98);
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: left;
+    position: absolute;
+    left: 1004px;
+    top: 1966.1px;
+    z-index: 198;
+}
+.Sed_egestas__ante_et_vulputate_volutpat__eros_p {
+    font-size: 15px;
+    font-family: "SourceSansPro";
+    color: rgb(140, 145, 147);
+    line-height: 1.6;
+    text-align: left;
+    position: absolute;
+    left: 1004.94px;
+    top: 1916.534px;
+    width: 333px;
+    height: 62px;
+    z-index: 197;
+}
+.bg {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(236, 236, 236);
+    border-radius: 3px;
+    background-color: rgb(236, 236, 236);
+    position: absolute;
+    left: 971px;
+    top: 1847px;
+    width: 544px;
+    height: 177px;
+    z-index: 196;
+}
+.news {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 194;
+}
+.Lospendisse_ac_urna__Etiam_pellentesque_mauris_ {
+    font-size: 15px;
+    font-family: "SourceSansPro";
+    color: rgb(120, 120, 120);
+    line-height: 1.6;
+    text-align: left;
+    position: absolute;
+    left: 503px;
+    top: 2220.534px;
+    width: 399px;
+    height: 38px;
+    z-index: 193;
+}
+. {
+    font-size: 18px;
+    font-family: "FontAwesome";
+    color: rgb(247, 116, 98);
+    line-height: 1.6;
+    text-align: left;
+    position: absolute;
+    left: 843px;
+    top: 2214.6px;
+    z-index: 192;
+}
+._22_Comments {
+    font-size: 14px;
+    font-family: "SourceSansPro";
+    color: rgb(247, 116, 98);
+    line-height: 2.057;
+    text-align: left;
+    position: absolute;
+    left: 503px;
+    top: 2160.101px;
+    z-index: 191;
+}
+.Phasellus_Lacina {
+    font-size: 16px;
+    font-family: "SourceSansPro";
+    color: rgb(0, 61, 72);
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: left;
+    position: absolute;
+    left: 505px;
+    top: 2139.1px;
+    z-index: 190;
+}
+.line {
+    background-image: url("line.png");
+    position: absolute;
+    left: 405px;
+    top: 2187px;
+    width: 70px;
+    height: 1px;
+    z-index: 189;
+}
+._05_Jan {
+    font-size: 35px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    line-height: 0.686;
+    text-align: center;
+    position: absolute;
+    left: 419px;
+    top: 2180.408px;
+    z-index: 188;
+}
+.btn {
+    border-radius: 3px;
+    background-color: rgb(109, 197, 221);
+    position: absolute;
+    left: 405px;
+    top: 2145px;
+    width: 70px;
+    height: 68px;
+    z-index: 187;
+}
+.news {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 185;
+}
+.Morbi_in_sem_quis_dui_placerat_ornare__Pellente {
+    font-size: 15px;
+    font-family: "SourceSansPro";
+    color: rgb(120, 120, 120);
+    line-height: 1.6;
+    text-align: left;
+    position: absolute;
+    left: 505px;
+    top: 2073.534px;
+    width: 413px;
+    height: 38px;
+    z-index: 184;
+}
+. {
+    font-size: 18px;
+    font-family: "FontAwesome";
+    color: rgb(247, 116, 98);
+    line-height: 1.6;
+    text-align: left;
+    position: absolute;
+    left: 797px;
+    top: 2067.6px;
+    z-index: 183;
+}
+._07_Comments {
+    font-size: 14px;
+    font-family: "SourceSansPro";
+    color: rgb(247, 116, 98);
+    line-height: 2.057;
+    text-align: left;
+    position: absolute;
+    left: 503px;
+    top: 2013.101px;
+    z-index: 182;
+}
+.Tellus_Mattis_Pelle {
+    font-size: 16px;
+    font-family: "SourceSansPro";
+    color: rgb(0, 61, 72);
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: left;
+    position: absolute;
+    left: 504px;
+    top: 1992.1px;
+    z-index: 181;
+}
+.line {
+    background-image: url("line.png");
+    position: absolute;
+    left: 405px;
+    top: 2040px;
+    width: 70px;
+    height: 1px;
+    z-index: 180;
+}
+._06_Jan {
+    font-size: 35px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    line-height: 0.686;
+    text-align: center;
+    position: absolute;
+    left: 419px;
+    top: 2033.408px;
+    z-index: 179;
+}
+.btn {
+    border-radius: 3px;
+    background-color: rgb(109, 197, 221);
+    position: absolute;
+    left: 405px;
+    top: 1998px;
+    width: 70px;
+    height: 68px;
+    z-index: 178;
+}
+.news {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 176;
+}
+.Suspendisse_ac_urna__Etiam_pellentesque_mauris_ {
+    font-size: 15px;
+    font-family: "SourceSansPro";
+    color: rgb(120, 120, 120);
+    line-height: 1.6;
+    text-align: left;
+    position: absolute;
+    left: 503px;
+    top: 1926.534px;
+    width: 395px;
+    height: 38px;
+    z-index: 175;
+}
+. {
+    font-size: 18px;
+    font-family: "FontAwesome";
+    color: rgb(247, 116, 98);
+    line-height: 1.6;
+    text-align: left;
+    position: absolute;
+    left: 843px;
+    top: 1920.6px;
+    z-index: 174;
+}
+._14_Comments {
+    font-size: 14px;
+    font-family: "SourceSansPro";
+    color: rgb(247, 116, 98);
+    line-height: 2.057;
+    text-align: left;
+    position: absolute;
+    left: 503px;
+    top: 1866.101px;
+    z-index: 173;
+}
+.Gravida_Ultrice {
+    font-size: 16px;
+    font-family: "SourceSansPro";
+    color: rgb(0, 61, 72);
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: left;
+    position: absolute;
+    left: 503px;
+    top: 1845.1px;
+    z-index: 172;
+}
+.line {
+    background-image: url("line.png");
+    position: absolute;
+    left: 405px;
+    top: 1893px;
+    width: 70px;
+    height: 1px;
+    z-index: 171;
+}
+._07_Jan {
+    font-size: 35px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    line-height: 0.686;
+    text-align: center;
+    position: absolute;
+    left: 419px;
+    top: 1886.408px;
+    z-index: 170;
+}
+.btn {
+    border-radius: 3px;
+    background-color: rgb(109, 197, 221);
+    position: absolute;
+    left: 405px;
+    top: 1851px;
+    width: 70px;
+    height: 68px;
+    z-index: 169;
+}
+.content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 167;
+}
+.line {
+    background-image: url("line.png");
+    position: absolute;
+    left: 405px;
+    top: 1760px;
+    width: 1110px;
+    height: 51px;
+    z-index: 166;
+}
+.Morbi_interdum_mollis_sapien__Sed_ac_risus__Pha {
+    font-size: 22px;
+    font-family: "SourceSansPro";
+    color: rgb(109, 197, 221);
+    line-height: 1.309;
+    text-align: center;
+    position: absolute;
+    left: 660px;
+    top: 1799.118px;
+    z-index: 165;
+}
+.Vestibulum_Commodo_Felis {
+    font-size: 32px;
+    font-family: "SourceSansPro";
+    color: rgb(0, 61, 72);
+    font-weight: bold;
+    line-height: 0.9;
+    text-align: center;
+    position: absolute;
+    left: 768.813px;
+    top: 1704.1px;
+    z-index: 164;
+}
+.bg {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 375px;
+    top: 1649px;
+    width: 1170px;
+    height: 648px;
+    z-index: 163;
+}

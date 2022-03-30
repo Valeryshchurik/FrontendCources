@@ -1,0 +1,40 @@
+.row_3 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 160;
+}
+.Morbi_interdum_mollis_sapien__Sed_ac_risus__Pha {
+    font-size: 18px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+    text-align: center;
+    position: absolute;
+    left: 634px;
+    top: 1568.441px;
+    z-index: 159;
+}
+.Praesent_Clacerat {
+    font-size: 32px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.9;
+    text-align: center;
+    position: absolute;
+    left: 837px;
+    top: 1499.6px;
+    z-index: 158;
+}
+.bg {
+    background-color: rgb(247, 116, 98);
+    position: absolute;
+    left: 375px;
+    top: 1443px;
+    width: 1170px;
+    height: 206px;
+    z-index: 157;
+}
