@@ -1,0 +1,28 @@
+.row3{
+    background-color: rgb(247, 116, 98);
+    display: flex;
+    height: 160px;
+
+    align-items: center;
+}
+
+.center-block{
+    width: 600px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center
+}
+
+
+.center-block__title{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.center-block__text{
+    color: white;
+    font-size: 14px;
+}

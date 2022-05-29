@@ -1,0 +1,131 @@
+.row4{
+    background-color: aliceblue;
+    height: 500px;
+
+    align-items: center;
+}
+
+
+.center-title{
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-size: 24px;
+
+    text-align: center
+}
+
+.center-subtitle{
+    color: #68C2EF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.center-column-container{
+    display: flex;
+
+}
+
+
+.date-column{
+    width: 50%;
+}
+
+.date-column__event{
+    display: flex;
+    padding: 20px;
+}
+
+.calendar{
+    background-color: #68C2EF;
+    width: 60px;
+    height: 50px;
+    margin-right: 20px;
+    text-align: center
+}
+
+.calendar__day{
+    height: 29px;
+    line-height: 29px;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.calendar__line{
+    height: 1px;
+    background-color: aliceblue;
+}
+
+.calendar__month{
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+
+.date-column__event__text-block{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.date-column__event__text-block__title{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.date-column__event__text-block__comments{
+    font-size: 12px;
+    color: rgb(247, 116, 98);
+}
+
+.date-column__event__text-block__text{
+    font-size: 12px;
+}
+
+.message-column{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 360px;
+}
+
+.message-block{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 40%;
+    background-color: #c4c4c4;
+}
+
+.message-block__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    font-size: 12px;
+}
+
+.message-block__text__message{
+    font-size: 14px;
+}
+
+.message-block__text__who{
+    font-size: 14px;
+    color: rgb(247, 116, 98);
+}
+
+.message-block__icon{
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50%;
+    padding: 15px;
+}
+

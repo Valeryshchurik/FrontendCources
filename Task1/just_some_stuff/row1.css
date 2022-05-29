@@ -1,0 +1,378 @@
+.row_1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 124;
+}
+.content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 123;
+}
+.Home {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 122;
+}
+.roof {
+    background-color: rgb(219, 89, 64);
+    position: absolute;
+    left: 1187px;
+    top: 669px;
+    width: 41px;
+    height: 28px;
+    z-index: 121;
+}
+.hole {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 1200px;
+    top: 691px;
+    width: 14px;
+    height: 15px;
+    z-index: 120;
+}
+.body {
+    background-color: rgb(195, 195, 195);
+    position: absolute;
+    left: 1189px;
+    top: 675px;
+    width: 36px;
+    height: 37px;
+    z-index: 119;
+}
+. {
+    font-size: 14px;
+    font-family: "FontAwesome";
+    color: rgb(255, 255, 255);
+    line-height: 2.057;
+    text-align: left;
+    position: absolute;
+    left: 1349px;
+    top: 788.601px;
+    z-index: 117;
+}
+.Read_More {
+    font-size: 16px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: left;
+    position: absolute;
+    left: 1267px;
+    top: 787.1px;
+    z-index: 116;
+}
+.Cras_ornare {
+    font-size: 20px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.44;
+    text-align: left;
+    position: absolute;
+    left: 1263px;
+    top: 656.1px;
+    z-index: 115;
+}
+.bg {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 1173px;
+    top: 658px;
+    width: 67px;
+    height: 67px;
+    z-index: 114;
+}
+.Simasellus_ultrices_nulla_quis_nibh__Quisque_a_ {
+    font-size: 15px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+    text-align: left;
+    position: absolute;
+    left: 1266px;
+    top: 729.534px;
+    width: 235px;
+    height: 62px;
+    z-index: 113;
+}
+.content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 111;
+}
+.Camera {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 110;
+}
+.shoot_button {
+    background-color: rgb(166, 164, 149);
+    position: absolute;
+    left: 789px;
+    top: 679px;
+    width: 7px;
+    height: 3px;
+    z-index: 109;
+}
+.inner_lens {
+    border-radius: 50%;
+    background-color: rgb(166, 164, 149);
+    position: absolute;
+    left: 799px;
+    top: 687px;
+    width: 15px;
+    height: 15px;
+    z-index: 108;
+}
+.lens {
+    border-radius: 50%;
+    background-color: rgb(202, 200, 183);
+    position: absolute;
+    left: 796px;
+    top: 684px;
+    width: 21px;
+    height: 21px;
+    z-index: 107;
+}
+.flash {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 800px;
+    top: 676px;
+    width: 13px;
+    height: 6px;
+    z-index: 106;
+}
+.light {
+    border-radius: 50%;
+    background-color: rgb(210, 81, 51);
+    position: absolute;
+    left: 821px;
+    top: 683px;
+    width: 4px;
+    height: 4px;
+    z-index: 105;
+}
+.detail {
+    background-color: rgb(219, 89, 64);
+    position: absolute;
+    left: 786px;
+    top: 689px;
+    width: 42px;
+    height: 12px;
+    z-index: 104;
+}
+.body {
+    background-color: rgb(224, 222, 205);
+    position: absolute;
+    left: 786px;
+    top: 675px;
+    width: 42px;
+    height: 34px;
+    z-index: 103;
+}
+. {
+    font-size: 14px;
+    font-family: "FontAwesome";
+    color: rgb(255, 255, 255);
+    line-height: 2.057;
+    text-align: left;
+    position: absolute;
+    left: 949px;
+    top: 788.601px;
+    z-index: 101;
+}
+.Read_More {
+    font-size: 16px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: left;
+    position: absolute;
+    left: 867px;
+    top: 787.1px;
+    z-index: 100;
+}
+.Vestibul_auctor {
+    font-size: 20px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.44;
+    text-align: left;
+    position: absolute;
+    left: 863.312px;
+    top: 655.6px;
+    z-index: 99;
+}
+.bg {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 773px;
+    top: 658px;
+    width: 67px;
+    height: 67px;
+    z-index: 98;
+}
+.Loasellus_ultrices_nulla_quis_nibh__Quisque_a_l {
+    font-size: 15px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+    text-align: left;
+    position: absolute;
+    left: 866px;
+    top: 729.534px;
+    width: 235px;
+    height: 62px;
+    z-index: 97;
+}
+.content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 95;
+}
+.Flag {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 2724px;
+    z-index: 94;
+}
+.flag {
+    background-color: rgb(219, 89, 64);
+    position: absolute;
+    left: 428px;
+    top: 675px;
+    width: 19px;
+    height: 24px;
+    z-index: 93;
+}
+.Rectangle_1 {
+    background-color: rgb(192, 63, 0);
+    position: absolute;
+    left: 436px;
+    top: 680px;
+    width: 11px;
+    height: 22px;
+    z-index: 92;
+}
+.flag {
+    background-color: rgb(219, 89, 64);
+    position: absolute;
+    left: 436px;
+    top: 683px;
+    width: 19px;
+    height: 24px;
+    z-index: 91;
+}
+.pole {
+    background-color: rgb(103, 103, 103);
+    position: absolute;
+    left: 424px;
+    top: 671px;
+    width: 5px;
+    height: 45px;
+    z-index: 90;
+}
+. {
+    font-size: 14px;
+    font-family: "FontAwesome";
+    color: rgb(255, 255, 255);
+    line-height: 2.057;
+    text-align: left;
+    position: absolute;
+    left: 578px;
+    top: 788.601px;
+    z-index: 88;
+}
+.Read_More {
+    font-size: 16px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: left;
+    position: absolute;
+    left: 496px;
+    top: 787.1px;
+    z-index: 87;
+}
+.Ausce_Cellentes_ {
+    font-size: 20px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.44;
+    text-align: left;
+    position: absolute;
+    left: 492.062px;
+    top: 655.6px;
+    z-index: 86;
+}
+.bg {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 402px;
+    top: 658px;
+    width: 67px;
+    height: 67px;
+    z-index: 85;
+}
+.Phasellus_ultrices_nulla_quis_nibh__Quisque_a_l {
+    font-size: 15px;
+    font-family: "SourceSansPro";
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+    text-align: left;
+    position: absolute;
+    left: 495px;
+    top: 729.534px;
+    width: 235px;
+    height: 62px;
+    z-index: 84;
+}
+.bg {
+    background-color: rgb(109, 197, 221);
+    position: absolute;
+    left: 375px;
+    top: 600px;
+    width: 1170px;
+    height: 270px;
+    z-index: 82;
+}
