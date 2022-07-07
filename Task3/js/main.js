@@ -11,24 +11,21 @@ window.addEventListener('resize', function(event){
 //Change URL params
 // Construct URLSearchParams object instance from current URL querystring.
 function setUrlParameter(param_name, param_value){
-  let theURL              = new URL('https://dummy.com');
-  theURL.searchParams.set(param_name, param_value);
-  console.log(theURL.href)
+  searchParams = new URLSearchParams(window.location.search)
+  searchParams.set(param_name, param_value);
+  history.pushState(null, null, "?"+searchParams.toString());
 }
 
 //3.
 //Change hash URL params
 // Construct URLSearchParams object instance from current URL querystring.
 function setUrlHashParameter(param_name, param_value){
-  let theURL              = new URL('https://dummy.com');             // create dummy url
-  theURL.search           = window.location.hash.substring(1);        // copy current hash-parameters without the '#' AS search-parameters
-  theURL.searchParams.set(param_name, param_value);   // set or update value with the searchParams-API
-  window.location.hash    = theURL.searchParams;                     // Write back as hashparameters
-  console.log(window.location.hash)
+  searchParams = new URLSearchParams()
+  searchParams.set(param_name, param_value);
+  window.location.hash = searchParams;
 }
 
-//4.
-//Create custom previous and next pages buttons on your page
+
 
 //5.
 //Browser info
@@ -43,3 +40,28 @@ function printBrowserInfoStack(){
   console.log('Is currently controlled by automation? ' + navigator.webdriver)
   console.log('Currently you are on ' + location.href)
 }
+
+//4.
+//Create custom previous and next pages buttons on your page
+//You can see that it works as it keep the params from 2 and 3 task
+
+function customBack(){
+  history.back()
+}
+
+function customForward(){
+  history.forward()
+}
+
+window.onload = function() {
+  const buttonSetUrlParamButton = document.getElementById('setUrlParam')
+  buttonSetUrlParamButton.addEventListener('click', setUrlParameter.bind(null, 'x', 6))
+  const buttonSetHashParamButton = document.getElementById('setHashParam')
+  buttonSetHashParamButton.addEventListener('click', setUrlHashParameter.bind(null, 'x', 6))
+  const printBrowserInfoStackButton = document.getElementById('printBrowserInfoStack')
+  printBrowserInfoStackButton.addEventListener('click', printBrowserInfoStack)
+  const backButton = document.getElementById('customBack')
+  backButton.addEventListener('click', customBack)
+  const forwardButton = document.getElementById('customForward')
+  forwardButton.addEventListener('click', customForward)
+};

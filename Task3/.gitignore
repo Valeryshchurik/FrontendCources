@@ -4,3 +4,10 @@
 node_modules
 dist
 .cache
+.editorconfig
+.gitattributes
+.htaccess
+browserconfig.xml
+package.json
+package-lock.json
+site.webmanifest
