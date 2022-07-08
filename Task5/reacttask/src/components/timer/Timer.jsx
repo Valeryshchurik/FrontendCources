@@ -1,49 +1,57 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 
 const Timer = ({children, settings, onComplete}) => {
+    const [time, setTime] = useState([0, 0, 5])
 
-    const [hours, setHours] = useState(0)
-    const [minutes, setMinutes] = useState(0)
-    const [seconds, setSeconds] = useState(5)
-
-    const [started, setStarted] = useState(false);
-    let intervalId
+    const [want_to_start, setWantToStart] = useState(true);
+    const intervalId = useRef();
     useEffect(() => {
-        if (!started) {
-            setStarted(true)
+        if (want_to_start) {
+            setWantToStart(false)
             startTimer();
         }
-    });
+    }, [want_to_start]);
 
     function startTimer() {
-        intervalId = setInterval(function(){countDown()}, 1000);
-    }
+        intervalId.current = setInterval(() => {
+            setTime((time)=>{
+                let hours = time[0];
+                let minutes = time[1];
+                let seconds = time[2];
 
-    function countDown() {
-        let s = seconds - 1;
+                let h = hours;
+                let m = minutes;
+                let s = seconds - 1;
 
-        if (s === -1) {
-            let m = minutes - 1;
-            s = 59;
-            if (m === -1){
-                let h = hours -1;
-                m = 59
-                if (h === -1){
-                    setSeconds(0)
-                    setMinutes(0)
-                    setHours(0)
+
+                if (s === -1) {
+                    let m = minutes - 1;
+                    s = 59;
+                    if (m === -1){
+                        let h = hours -1;
+                        m = 59;  // Why do webstorm is lying to me?
+                        if (h === -1){
+                            s=0;
+                            m=0;  // Why do webstorm is lying to me?
+                            h=0;  // Why do webstorm is lying to me?
+                            clearInterval(intervalId.current)
+                        }
+                    }
                 }
-                setHours(h)
-            }
-            setMinutes(m)
-        }
-        setSeconds(s)
-        console.log(seconds)
+                console.log(seconds)
+                return [h, m, s]}
+            );
+        }, 1000);
     }
+
 
     return (
         <div>
-            {children(hours, minutes, seconds)}
+            {children(time[0], time[1], time[2])}
+            &nbsp;Таймер через предыдущее значение&nbsp;
+            <button onClick={() => {clearInterval(intervalId.current); setWantToStart(true); setTime([0,0,5])}}>
+                Рестарт
+            </button>
         </div>
     );
 };
