@@ -2,6 +2,7 @@
 import React, {useRef, useState} from "react";
 import Timer from "./components/timer/Timer";
 import TimerOnRef from "./components/timer/TimerOnRef";
+import SearchInput from "./components/search_input/SearchInput";
 
 
 const SearchInputModes = {Immediate: 1, AfterPause:2, ByEnter: 3}
@@ -17,7 +18,7 @@ const App = () => {
       stringsToRender.current.filter(
           string => {
               return (
-                  string.toLowerCase().includes(searchField.toLowerCase())
+                  string.toLowerCase().includes(strValue.toLowerCase())
               );
           }
       );
