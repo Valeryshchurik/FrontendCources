@@ -1,27 +1,32 @@
 
-import React, {useRef, useState} from "react";
+import React, {useState} from "react";
 import Timer from "./components/timer/Timer";
 import TimerOnRef from "./components/timer/TimerOnRef";
 import SearchInput from "./components/search_input/SearchInput";
 
 
-const SearchInputModes = {Immediate: 1, AfterPause:2, ByEnter: 3}
+const SearchInputModes = {Immediate: 1, AfterPause: 2, ByEnter: 3}
 
 const App = () => {
   const settings = null
   const onTimerCompleted = null
-  const [searchQuery, setSearchQuery] = useState('')
   const strings = ['123', 'abrpetr', 'abracadabra']
-  const stringsToRender = useRef(strings)
+  const [stringsToRender, setStringsToRender] = useState(strings)
+  const [searchMode, setSearchMode] = useState(SearchInputModes.Immediate)
 
   function filterStrings(strValue){
-      stringsToRender.current.filter(
-          string => {
-              return (
-                  string.toLowerCase().includes(strValue.toLowerCase())
-              );
-          }
-      );
+      console.log('FILTER CALLED')
+      console.log(strValue)
+      if (strValue !== '') {
+          setStringsToRender(strings.filter(
+                  string => {
+                      return (
+                          string.toLowerCase().includes(strValue.toLowerCase())
+                      );
+                  }
+              )
+          );
+      }
   }
 
   return (
@@ -42,10 +47,17 @@ const App = () => {
           </TimerOnRef>
           <SearchInput
               placeholder="Search"
-              mode={SearchInputModes.Immediate}
+              mode={SearchInputModes[searchMode]}
               onSearch={filterStrings}
           />
-          <ul>{stringsToRender.current.map((string) =><li>{string}</li>)}</ul>
+          Choose mode
+          <select
+              value={searchMode}
+              onChange={(event) => setSearchMode(event.target.value)}
+          >
+              {Object.keys(SearchInputModes).map((string) =><option value={string}>{string}</option>)}
+          </select>
+          <ul>{stringsToRender.map((string) =><li>{string}</li>)}</ul>
       </div>
   );
 }
