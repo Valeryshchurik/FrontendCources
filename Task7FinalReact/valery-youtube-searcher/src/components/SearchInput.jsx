@@ -2,7 +2,7 @@ import React from 'react';
 import {useState} from "react";
 
 const SearchInput = ({placeholder, mode, onSearch}) => {
-    const [value, setValue] = useState('222')
+    const [value, setValue] = useState('Supreme proffesional')
 
     function handleKeyDown(event){
         setValue(event.target.value)
@@ -19,6 +19,7 @@ const SearchInput = ({placeholder, mode, onSearch}) => {
                 placeholder = {placeholder}
                 value={value}
                 type="search"
+                onChange={event => setValue(event.target.value)}
                 onKeyDown={handleKeyDown}
             />
         </section>

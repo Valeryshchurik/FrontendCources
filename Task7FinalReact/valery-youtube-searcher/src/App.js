@@ -13,7 +13,9 @@ const App = () => {
 
     function searchHandler(searchValue) {
         console.log('AAAAAAAAAAAAAAAAAAAAAAa')
+        console.log(searchValue)
         dispatch(getVideos(searchValue, 1, 10))
+
     }
 
 

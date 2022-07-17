@@ -14,9 +14,13 @@ const defaultState = {
 export default function videosReducer(state = defaultState, action) {
     switch (action.type) {
         case SET_VIDEOS:
+
+            console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa')
+            console.log(action.payload)
             return {
                 ...state,
-                items: action.payload.items,
+
+                items: action.payload,
                 isFetching: false
             }
         case ADD_VIDEOS:
