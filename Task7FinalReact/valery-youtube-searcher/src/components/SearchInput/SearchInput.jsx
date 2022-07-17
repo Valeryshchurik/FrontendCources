@@ -1,3 +1,4 @@
+import './SearchInput.css';
 import React from 'react';
 import {useState} from "react";
 
@@ -7,7 +8,6 @@ const SearchInput = ({placeholder, mode, onSearch}) => {
     function handleKeyDown(event){
         setValue(event.target.value)
         if (event.key === 'Enter'){
-            console.log('Ccccccccccccccc')
             onSearch(value);
         }
     }
@@ -15,7 +15,7 @@ const SearchInput = ({placeholder, mode, onSearch}) => {
     return (
         <section>
             <h2>Search</h2>
-            <input
+            <input className="Search"
                 placeholder = {placeholder}
                 value={value}
                 type="search"

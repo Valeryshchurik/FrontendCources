@@ -1,9 +1,9 @@
 import './App.css';
 import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import SearchInput from "./components/SearchInput";
-import {getVideos} from "./actions/videos";
-import VideoItem from "./components/VideoItem";
+import SearchInput from "./components/SearchInput/SearchInput";
+import {setVideosFromYoutube} from "./actions/videos";
+import VideoItem from "./components/VideoItem/VideoItem";
 
 const App = () => {
     const dispatch = useDispatch()
@@ -12,9 +12,7 @@ const App = () => {
     const isFetchError = useSelector(state => state.videos.isFetchError)
 
     function searchHandler(searchValue) {
-        console.log('AAAAAAAAAAAAAAAAAAAAAAa')
-        console.log(searchValue)
-        dispatch(getVideos(searchValue, 1, 10))
+        dispatch(setVideosFromYoutube(searchValue, 1, 10))
 
     }
 
@@ -22,22 +20,27 @@ const App = () => {
 
     return (
         <div className="App">
-          <header className="App-header">
-              AAAAAAAAAAAAAAAAAAAAAAAAAAa
-          </header>
-        <SearchInput
-            placeholder="Search"
-            onSearch={searchHandler}
-        />
-        {
-            isFetching === false
-                ?
-                videoItems.map(videoItem => <VideoItem videoItem={videoItem}/>)
-                :
-                <div className="fetching">
+            <div className="Head">
+              <h1>Youtube searcher</h1>
+            </div>
+            <div className="MainContainer">
+                <SearchInput
+                    className="Big"
+                    placeholder="Search"
+                    onSearch={searchHandler}
+                />
+                <div className="VideoContainer">
+                {
+                    isFetching === false
+                        ?
+                        videoItems.map(videoItem => <VideoItem videoItem={videoItem}/>)
+                        :
+                        <div className="fetching">
 
+                        </div>
+                }
                 </div>
-        }
+            </div>
         </div>
       );
 }

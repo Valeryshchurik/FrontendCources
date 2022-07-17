@@ -1,38 +1,48 @@
 import axios from 'axios'
 import {setFetchError, setIsFetching, setVideos} from "../reducers/videosReducer";
-const KEY = 'AIzaSyArwvzWg4eNstGvmXd4xB8p_Jmb2-dwG_o'; // mention your youtube API key here
 
-export const getVideos = (searchQuery = "proffesional", currentPage, perPage) => {
-    console.log(searchQuery)
+const KEY = ''; // mention your youtube API key here
+
+export const setVideosFromYoutube = (searchQuery = "", currentPage, perPage) => {
+    const videos = getYoutubeVideo(searchQuery, currentPage, perPage)
+    dispatch(setVideos(videos))
+}
+
+export const addVideosFromYoutube = (searchQuery = "", currentPage, perPage=10) => {
+    const videos = getYoutubeVideo(searchQuery, currentPage, perPage)
+    dispatch(addVideos(videos))
+}
+
+function getYoutubeVideo(searchString, currentPage, perPage){
     if (searchQuery === "") {
         return
     }
     return async (dispatch) => {
         try {
             dispatch(setIsFetching(true))
-            const response = await axios.get(`https://www.googleapis.com/youtube/v3/search?q=${searchQuery}&type=video&part=snippet&maxResults=5&key=${KEY}`)
-            const videos = response.data.items.map(video => parseVideo(video))
-            dispatch(setVideos(videos))
-            console.log(videos)
+            const response = await axios.get(
+                `https://www.googleapis.com/youtube/v3/search?q=${searchString}&type=video&part=snippet&maxResults=${perPage}&key=${KEY}`
+            )
+            return response.data.items.map(video => parseVideo(video))
         } catch (e) {
+            console.error(e)
             dispatch(setFetchError(true))
             dispatch(setIsFetching(false))
             setTimeout(()=> {
                 dispatch(setFetchError(false))
             }, 2000)
         }
-
     }
 }
 
 function parseVideo(youtubeVideo){
-    const parsedVideo = {
-        id: youtubeVideo.id,
+    return {
+        id: youtubeVideo.id.videoId,
         title: youtubeVideo.snippet.title,
+        description: youtubeVideo.snippet.description,
         channelTitle: youtubeVideo.snippet.channelTitle,
-        imageUrl: youtubeVideo.snippet.thumbnails.url
+        imageUrl: youtubeVideo.snippet.thumbnails.high.url,
     }
-    return parsedVideo
 }
 
 export const getCurrentRepo = async (username, repoName, setRepo) => {
