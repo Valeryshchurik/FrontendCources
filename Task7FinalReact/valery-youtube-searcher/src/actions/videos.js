@@ -15,7 +15,7 @@ export const addVideosFromYoutube = (searchQuery = "", pageToken, perPage=3) => 
     return async (dispatch) => {
         const videos = await getYoutubeVideo(dispatch, searchQuery, pageToken, perPage)
         console.log(videos)
-        // dispatch(addVideos(videos))
+        dispatch(addVideos(videos))
 
         dispatch(setIsFetching(false))
     }

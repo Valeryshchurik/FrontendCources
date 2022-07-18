@@ -1,4 +1,4 @@
-import './SearchInput.css';
+import cl from './SearchInput.module.css';
 import React from 'react';
 import {useState} from "react";
 
@@ -15,7 +15,7 @@ const SearchInput = ({placeholder, mode, onSearch}) => {
     return (
         <section>
             <h2>Search</h2>
-            <input className="Search"
+            <input className={cl.Search}
                 placeholder = {placeholder}
                 value={value}
                 type="search"

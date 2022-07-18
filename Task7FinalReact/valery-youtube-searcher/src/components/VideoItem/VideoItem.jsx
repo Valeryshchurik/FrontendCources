@@ -1,4 +1,4 @@
-import './VideoItem.css';
+import cl from './VideoItem.module.css';
 import React from 'react';
 
 const VideoItem = (props) => {
@@ -6,22 +6,22 @@ const VideoItem = (props) => {
     console.log(videoItem.id)
 
     return (
-        <div className="video-item">
-            <div className="video-item__image">
+        <div className={cl.videoItem}>
+            <div className={cl.videoItem__image}>
                 <a target="_blank" href={`https://www.youtube.com/watch?v=${videoItem.id}`}>
                     <img className="" src={videoItem.imageUrl} alt=""></img>
                 </a>
             </div>
-            <div className="video-item__info-container">
+            <div className={cl.videoItem__infoContainer}>
                 <a target="_blank" href={`https://www.youtube.com/watch?v=${videoItem.id}`}>
-                    <div className="video-item__info-container__title">
+                    <div className={cl.videoItem__infoContainer__title}>
                         {videoItem.title}
                     </div>
                 </a>
-                <div className="video-item__info-container__channel">
+                <div className={cl.videoItem__infoContainer__channel}>
                     {videoItem.channelTitle}
                 </div>
-                <div className="video-item__info-container__description">
+                <div>
                     {videoItem.description}
                 </div>
             </div>

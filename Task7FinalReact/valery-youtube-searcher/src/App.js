@@ -1,4 +1,4 @@
-import './App.css';
+import cl from './App.module.css';
 import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import SearchInput from "./components/SearchInput/SearchInput";
@@ -31,11 +31,11 @@ const App = () => {
     }
 
     return (
-        <div className="App">
-            <div className="Head">
+        <div className={cl.App}>
+            <div className={cl.Head}>
                 <h1>Youtube searcher</h1>
             </div>
-            <div className="MainContainer">
+            <div>
                 <SearchInput
                     className="Big"
                     placeholder="Search"

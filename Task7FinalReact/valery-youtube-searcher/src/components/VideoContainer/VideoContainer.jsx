@@ -1,3 +1,4 @@
+import cl from './VideoContainer.module.css';
 import React from 'react';
 import VideoItem from "../VideoItem/VideoItem";
 import Loader from "../UI/Loader/Loader";
@@ -18,7 +19,7 @@ const VideoContainer = (props) => {
     })
 
     return (
-        <div className="VideoContainer">
+        <div className={cl.VideoContainer}>
             {
                 props.videoItems.map(videoItem => <VideoItem videoItem={videoItem}/>)
             }
