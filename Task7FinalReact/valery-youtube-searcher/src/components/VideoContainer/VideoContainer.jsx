@@ -7,19 +7,13 @@ import {useRef} from "react";
 
 const VideoContainer = (props) => {
     const endListHiddenElement = useRef()
-    const wantToCall = useRef(true)
 
-    console.log(props.isFetching)
     useObserver(endListHiddenElement, true, props.isFetching, ()=>{
-
-        if (wantToCall.current) {
-            wantToCall.current = false
-            props.endHandler()
-        }
+        props.endHandler()
     })
 
     return (
-        <div className={cl.VideoContainer}>
+        <div className={cl.videoContainer}>
             {
                 props.videoItems.map(videoItem => <VideoItem videoItem={videoItem}/>)
             }

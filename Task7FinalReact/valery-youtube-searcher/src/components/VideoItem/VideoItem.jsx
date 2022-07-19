@@ -3,7 +3,6 @@ import React from 'react';
 
 const VideoItem = (props) => {
     const videoItem = props.videoItem
-    console.log(videoItem.id)
 
     return (
         <div className={cl.videoItem}>

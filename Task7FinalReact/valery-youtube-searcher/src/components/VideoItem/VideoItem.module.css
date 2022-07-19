@@ -1,10 +1,10 @@
-.video-item{
+.videoItem{
     display: flex;
     padding: 10px;
     max-width: 900px;
 }
 
-.video-item__info-container{
+.videoItem__infoContainer{
     width: 700px;
     display: flex;
     justify-content: space-around;
@@ -13,21 +13,21 @@
     margin-left: 20px;
 }
 
-.video-item__info-container__title{
+.videoItem__infoContainer__title{
     font-size: 20px;
     font-weight: bold;
 }
 
-.video-item__info-container__channel{
+.videoItem__infoContainer__channel{
     font-weight: lighter;
 }
 
-.video-item__image{
+.videoItem__image{
     width: 900px;
     overflow:hidden;
     height: 260px;
 }
 
-.video-item__image img{
+.videoItem__image img{
     margin: -45px 0 -49px 0
 }

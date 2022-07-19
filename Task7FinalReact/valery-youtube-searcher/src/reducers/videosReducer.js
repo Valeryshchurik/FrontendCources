@@ -24,7 +24,7 @@ export default function videosReducer(state = defaultState, action) {
         case ADD_VIDEOS:
             return {
                 ...state,
-                items: [...state.items, ...state.payload],
+                items: [...state.items, ...action.payload],
                 isFetching: false
             }
         case SET_IS_FETCHING:

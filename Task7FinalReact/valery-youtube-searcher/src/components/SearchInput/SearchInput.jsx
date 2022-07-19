@@ -15,7 +15,7 @@ const SearchInput = ({placeholder, mode, onSearch}) => {
     return (
         <section>
             <h2>Search</h2>
-            <input className={cl.Search}
+            <input className={cl.search}
                 placeholder = {placeholder}
                 value={value}
                 type="search"

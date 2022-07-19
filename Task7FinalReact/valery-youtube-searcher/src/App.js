@@ -31,8 +31,8 @@ const App = () => {
     }
 
     return (
-        <div className={cl.App}>
-            <div className={cl.Head}>
+        <div className={cl.app}>
+            <div className={cl.head}>
                 <h1>Youtube searcher</h1>
             </div>
             <div>
