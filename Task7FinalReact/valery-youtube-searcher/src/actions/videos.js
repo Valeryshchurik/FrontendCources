@@ -1,7 +1,7 @@
 import axios from 'axios'
 import {addVideos, setFetchError, setIsFetching, setNextPageToken, setVideos} from "../reducers/videosReducer";
 
-const KEY = 'AIzaSyB_PrLVSwyYefFqACMi8nzHEqA_92lKrgw'; // mention your youtube API key here
+const KEY = ''; // mention your youtube API key here
 
 export const setVideosFromYoutube = (searchQuery = "", perPage) => {
     return async (dispatch) => {
