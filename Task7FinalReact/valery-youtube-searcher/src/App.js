@@ -3,8 +3,8 @@ import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import SearchInput from "./components/SearchInput/SearchInput";
 import {setVideosFromYoutube, addVideosFromYoutube} from "./actions/videos";
-import Error from "./components/Error/Error";
-import VideoContainer from "./components/VideoContainer/VideoContainer";
+import Error from "components/Error/Error";
+import VideoContainer from "components/VideoContainer/VideoContainer";
 
 const App = () => {
     const dispatch = useDispatch()
