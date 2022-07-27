@@ -1,22 +1,22 @@
-var fs = require('fs');
+const fs = require('fs');
 
-var generate_searches = function(length, strict, limit) {
-	var letters = 'abcdefghijklmnopqrstuvwxyz';
-	var combinations = [];
-	var branch = function(base, level) {
-		if (level === length) return;
-		for (var i = 0, n = letters.length; i < n; i++) {
-			if (combinations.length === limit) {
-				return;
-			}
-			if (!strict || level === length - 1) {
-				combinations.push(base + letters[i]);
-			}
-			branch(base + letters[i], level + 1);
-		}
-	};
-	branch('', 0);
-	return combinations.join('\n');
+const generate_searches = function (length, strict, limit) {
+    const letters = 'abcdefghijklmnopqrstuvwxyz';
+    const combinations = [];
+    var branch = function (base, level) {
+        if (level === length) return;
+        for (let i = 0, n = letters.length; i < n; i++) {
+            if (combinations.length === limit) {
+                return;
+            }
+            if (!strict || level === length - 1) {
+                combinations.push(base + letters[i]);
+            }
+            branch(base + letters[i], level + 1);
+        }
+    };
+    branch('', 0);
+    return combinations.join('\n');
 };
 
 process.chdir(__dirname);
