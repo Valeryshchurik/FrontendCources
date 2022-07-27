@@ -1,4 +1,4 @@
-import cl from './SearchInput.module.css';
+import cl from 'components/SearchInput/SearchInput.module.css';
 import React from 'react';
 import {useState} from "react";
 

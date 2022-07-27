@@ -1,8 +1,8 @@
-import cl from './VideoContainer.module.css';
+import cl from 'components/VideoContainer/VideoContainer.module.css';
 import React from 'react';
-import VideoItem from "../VideoItem/VideoItem";
-import Loader from "../UI/Loader/Loader";
-import {useObserver} from "../../hooks/useObserver";
+import VideoItem from "components/VideoItem/VideoItem";
+import Loader from "components/UI/Loader/Loader";
+import {useObserver} from "hooks/useObserver";
 import {useRef} from "react";
 
 const VideoContainer = (props) => {

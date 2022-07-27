@@ -1,33 +1,32 @@
-import cl from './App.module.css';
-import {useState} from "react";
-import {useDispatch, useSelector} from "react-redux";
-import SearchInput from "./components/SearchInput/SearchInput";
-import {setVideosFromYoutube, addVideosFromYoutube} from "./actions/videos";
-import Error from "components/Error/Error";
-import VideoContainer from "components/VideoContainer/VideoContainer";
+import cl from 'App.module.css';
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import SearchInput from 'components/SearchInput/SearchInput';
+import { setVideosFromYoutube, addVideosFromYoutube } from 'actions/videos';
+import Error from 'components/Error/Error';
+import VideoContainer from 'components/VideoContainer/VideoContainer';
 
 const App = () => {
-    const dispatch = useDispatch()
-    const videoItems = useSelector(state => state.videos.items)
-    const isFetching = useSelector(state => state.videos.isFetching)
-    const isFetchError = useSelector(state => state.videos.isFetchError)
-    const nextPageToken = useSelector(state => state.videos.nextPageToken)
-    const [searchVideoString, setSearchVideoString] = useState('')
-
+    const dispatch = useDispatch();
+    const videoItems = useSelector((state) => state.videos.items);
+    const isFetching = useSelector((state) => state.videos.isFetching);
+    const isFetchError = useSelector((state) => state.videos.isFetchError);
+    const nextPageToken = useSelector((state) => state.videos.nextPageToken);
+    const [searchVideoString, setSearchVideoString] = useState('');
 
     function searchHandler(searchValue) {
-        if (searchValue === "") {
-            return
+        if (searchValue === '') {
+            return;
         }
-        dispatch(setVideosFromYoutube(searchValue, 10))
-        setSearchVideoString(searchValue)
+        dispatch(setVideosFromYoutube(searchValue, 10));
+        setSearchVideoString(searchValue);
     }
 
     function endHandler() {
-        if (searchVideoString === "") {
-            return
+        if (searchVideoString === '') {
+            return;
         }
-        dispatch(addVideosFromYoutube(searchVideoString, nextPageToken, 10))
+        dispatch(addVideosFromYoutube(searchVideoString, nextPageToken, 10));
     }
 
     return (
@@ -48,6 +47,6 @@ const App = () => {
             </div>
         </div>
     );
-}
+};
 
 export default App;
