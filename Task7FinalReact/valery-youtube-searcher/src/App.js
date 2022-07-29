@@ -1,5 +1,5 @@
 import cl from 'App.module.css';
-import { useState } from 'react';
+import {useCallback, useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import SearchInput from 'components/SearchInput/SearchInput';
 import { setVideosFromYoutube, addVideosFromYoutube } from 'actions/videos';
@@ -14,20 +14,22 @@ const App = () => {
     const nextPageToken = useSelector((state) => state.videos.nextPageToken);
     const [searchVideoString, setSearchVideoString] = useState('');
 
-    function searchHandler(searchValue) {
+    const searchHandler = useCallback((searchValue)=>{
         if (searchValue === '') {
             return;
         }
         dispatch(setVideosFromYoutube(searchValue, 10));
         setSearchVideoString(searchValue);
-    }
+    },[dispatch]
+    )
 
-    function endHandler() {
+    const endHandler = useCallback(()=>{
         if (searchVideoString === '') {
             return;
         }
         dispatch(addVideosFromYoutube(searchVideoString, nextPageToken, 10));
-    }
+    },[searchVideoString, nextPageToken, dispatch]
+    )
 
     return (
         <div className={cl.app}>

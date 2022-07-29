@@ -3,7 +3,7 @@ import {
     addVideos, setFetchError, setIsFetching, setNextPageToken, setVideos,
 } from 'reducers/videosReducer';
 
-const KEY = ''; // mention your youtube API key here
+const KEY = 'AIzaSyB_PrLVSwyYefFqACMi8nzHEqA_92lKrgw'; // mention your youtube API key here
 
 export const setVideosFromYoutube = (searchQuery = '', perPage) => async (dispatch) => {
     const videos = await getYoutubeVideo(dispatch, searchQuery, '', perPage);

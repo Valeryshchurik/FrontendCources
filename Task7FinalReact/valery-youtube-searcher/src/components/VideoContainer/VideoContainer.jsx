@@ -15,7 +15,7 @@ const VideoContainer = (props) => {
     return (
         <div className={cl.videoContainer}>
             {
-                props.videoItems.map(videoItem => <VideoItem videoItem={videoItem}/>)
+                props.videoItems.map(videoItem => <VideoItem key={videoItem.id} videoItem={videoItem}/>)
             }
             {
                 props.isFetching === true && <Loader/>

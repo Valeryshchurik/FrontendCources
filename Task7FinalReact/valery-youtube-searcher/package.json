@@ -24,6 +24,7 @@
     "dotenv": "^10.0.0",
     "dotenv-expand": "^5.1.0",
     "eslint": "^8.3.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-react-app": "^7.0.1",
     "eslint-webpack-plugin": "^3.1.1",
     "file-loader": "^6.2.0",
@@ -64,13 +65,30 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "lint": "eslint src"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "parser": "@typescript-eslint/parser",
+    "rules": {
+      "no-undef": [ 1 ],
+      "indent": ["error", 4],
+      "react/jsx-indent": ["error", 4],
+      "react/jsx-indent-props": ["error", 4]
+    },
+    "settings": {
+      "import/resolver": {
+        "root-import": {
+          "rootPathPrefix": "~",
+          "rootPathSuffix": "src/js",
+          "extensions": [".js", ".android.js", ".ios.js"]
+        }
+      }
+    }
   },
   "browserslist": {
     "production": [
