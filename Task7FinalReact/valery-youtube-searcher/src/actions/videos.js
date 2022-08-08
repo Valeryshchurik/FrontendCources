@@ -3,7 +3,7 @@ import {
     addVideos, setFetchError, setIsFetching, setNextPageToken, setVideos,
 } from 'reducers/videosReducer';
 
-const KEY = ''; // mention your youtube API key here
+const KEY = 'AIzaSyB_PrLVSwyYefFqACMi8nzHEqA_92lKrgw'; // mention your youtube API key here
 
 export const setVideosFromYoutube = (searchQuery = '', perPage) => async (dispatch) => {
     const videos = await getYoutubeVideo(dispatch, searchQuery, '', perPage);
@@ -20,19 +20,21 @@ export const addVideosFromYoutube = (searchQuery = '', pageToken, perPage = 3) =
 async function getYoutubeVideo(dispatch, searchString, pageToken, perPage) {
     try {
         dispatch(setIsFetching(true));
-        let query_url = `https://www.googleapis.com/youtube/v3/search?q=${searchString}&type=video&part=snippet&maxResults=${perPage}&key=${KEY}`;
+        let queryUrl = `https://www.googleapis.com/youtube/v3/search?q=${searchString}&type=video&part=snippet&maxResults=${perPage}&key=${KEY}`;
         if (pageToken) {
-            query_url += `&pageToken=${pageToken}`;
+            queryUrl += `&pageToken=${pageToken}`;
         }
-        const response = await axios.get(query_url);
+        const response = await axios.get(queryUrl);
         const parsedVideo = response.data.items.map((video) => parseVideo(video));
         dispatch(setNextPageToken(response.data.nextPageToken));
         dispatch(setFetchError(false));
-        return parsedVideo
+        return parsedVideo;
     } catch (e) {
+        // eslint-disable-next-line no-console
         console.error(e);
         dispatch(setFetchError(true));
         dispatch(setIsFetching(false));
+        return [];
     }
 }
 

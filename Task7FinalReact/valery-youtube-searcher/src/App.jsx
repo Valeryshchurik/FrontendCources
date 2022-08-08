@@ -1,12 +1,12 @@
 import cl from 'App.module.css';
-import {useCallback, useState} from 'react';
+import React, { useCallback, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import SearchInput from 'components/SearchInput/SearchInput';
 import { setVideosFromYoutube, addVideosFromYoutube } from 'actions/videos';
 import Error from 'components/Error/Error';
 import VideoContainer from 'components/VideoContainer/VideoContainer';
 
-const App = () => {
+function App() {
     const dispatch = useDispatch();
     const videoItems = useSelector((state) => state.videos.items);
     const isFetching = useSelector((state) => state.videos.isFetching);
@@ -14,22 +14,20 @@ const App = () => {
     const nextPageToken = useSelector((state) => state.videos.nextPageToken);
     const [searchVideoString, setSearchVideoString] = useState('');
 
-    const searchHandler = useCallback((searchValue)=>{
+    const searchHandler = useCallback((searchValue) => {
         if (searchValue === '') {
             return;
         }
         dispatch(setVideosFromYoutube(searchValue, 10));
         setSearchVideoString(searchValue);
-    },[dispatch]
-    )
+    }, [dispatch]);
 
-    const endHandler = useCallback(()=>{
+    const endHandler = useCallback(() => {
         if (searchVideoString === '') {
             return;
         }
         dispatch(addVideosFromYoutube(searchVideoString, nextPageToken, 10));
-    },[searchVideoString, nextPageToken, dispatch]
-    )
+    }, [searchVideoString, nextPageToken, dispatch]);
 
     return (
         <div className={cl.app}>
@@ -43,12 +41,17 @@ const App = () => {
                     onSearch={searchHandler}
                 />
                 {isFetchError
-                    ? <Error/>
-                    : <VideoContainer videoItems={videoItems} isFetching={isFetching} endHandler={endHandler}/>
-                }
+                    ? <Error />
+                    : (
+                        <VideoContainer
+                            videoItems={videoItems}
+                            isFetching={isFetching}
+                            endHandler={endHandler}
+                        />
+                    )}
             </div>
         </div>
     );
-};
+}
 
 export default App;
