@@ -1,0 +1,33 @@
+.videoItem{
+    display: flex;
+    padding: 10px;
+    max-width: 900px;
+}
+
+.videoItem__infoContainer{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.videoItem__infoContainer__title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.videoItem__infoContainer__channel{
+    font-weight: lighter;
+}
+
+.videoItem__image{
+    width: 900px;
+    overflow:hidden;
+    height: 260px;
+}
+
+.videoItem__image img{
+    margin: -45px 0 -49px 0
+}

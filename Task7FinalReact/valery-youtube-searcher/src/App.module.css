@@ -1,0 +1,35 @@
+/*Обнуление*/
+*{padding:0;margin:0}
+h1{
+  color: aqua;
+  font-size:72px;
+}
+h2{
+  color: yellow;
+  font-size:36px
+}
+/*--------------------*/
+
+
+html {
+  background: url("../public/1103_beach-sea-sunset_1920x1080.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+.app {
+  color: #0151fd;
+  text-align: center;
+  max-width: 1920px;
+  min-height: 1000px;
+
+}
+
+.head{
+  height: 100px;
+  line-height: 90px;
+  margin-bottom: 100px;
+}
